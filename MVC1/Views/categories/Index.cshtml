@@ -1,0 +1,15 @@
+﻿<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+	<h1>Get All Categories</h1>
+	<ul>
+		@foreach (Category cat in @Model)
+		{
+			<li> @cat.Name <a href="/Categories/Details/@cat.Id" >Details</a> </li>
+		}
+	</ul>
+</body>
+
+</html>
