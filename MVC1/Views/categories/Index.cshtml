@@ -4,10 +4,18 @@
 </head>
 <body>
 	<h1>Get All Categories</h1>
+
+	<a href="/Categories/Create"> Create </a>
+
 	<ul>
 		@foreach (Category cat in @Model)
 		{
-			<li> @cat.Name <a href="/Categories/Details/@cat.Id" >Details</a> </li>
+			<li>
+				@cat.Name - @cat.Description 
+				<a href="/Categories/Details/@cat.Id" class="btn btn-outline-dark" >Details</a>
+				<a href="/Categories/Delete/@cat.Id" class="btn btn-outline-danger">Delete</a>
+				<a href="/Categories/Update/@cat.Id" class="btn btn-outline-info ">Update</a>
+			</li>
 		}
 	</ul>
 </body>

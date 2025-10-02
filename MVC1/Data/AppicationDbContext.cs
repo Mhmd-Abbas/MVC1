@@ -17,9 +17,9 @@ namespace MVC1.Data
 			base.OnModelCreating(modelBuilder);
 
 			modelBuilder.Entity<Category>().HasData(
-				new Category { Id = 1, Name = "Tariq 1" },
-				new Category { Id = 2, Name = "Tariq 2" },
-				new Category { Id = 3, Name = "Tariq 3" }
+				new Category { Id = 1, Name = "Tariq 1", Description = "desc1" },
+				new Category { Id = 2, Name = "Tariq 2", Description = "desc2" },
+				new Category { Id = 3, Name = "Tariq 3", Description = "desc3" }
 				);
 		}
 

@@ -59,6 +59,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.9, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.8, )"
             }
           },
           "imports": [
